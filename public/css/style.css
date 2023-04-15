@@ -1,9 +1,92 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+body {
+  font-family: "Ubuntu", sans-serif;
+
+  background-color: #0c6061;
+
+  color: #fffdd1;
+}
+
+nav {
+  font-family: "Rubik", sans-serif;
+}
+
+section {
+  background-color: #0f7d7e;
+}
+
+section h1 {
+  text-align: center;
+  font-size: 25px;
+}
+
+section h2 {
+  font-size: 18px;
+}
+
+figure {
+  position: relative;
+  text-align: center;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fffdd1;
+  font-size: 20px;
+  padding: 10px;
+  padding-bottom: -10px;
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.color {
+  background-color: red;
+}
+
+.maxw {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+/* Margin */
+.margin-1 {
+  margin: 1rem;
+}
+
+.margin-b {
+  margin-bottom: 0.5rem;
+}
+
+/* Padding */
+.padding-1 {
+  padding: 1rem;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.justify-c {
+  justify-content: space-between;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.bor-1 {
+  border-radius: 4px;
+}
+
+.bor-10 {
+  border-radius: 20px;
 }
