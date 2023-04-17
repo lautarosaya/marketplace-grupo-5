@@ -16,6 +16,13 @@ nav {
   font-family: "Rubik", sans-serif;
 }
 
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fffdd1;
+}
+
 section {
   background-color: #0f7d7e;
 }
@@ -57,6 +64,15 @@ figcaption {
 .flex {
   display: flex;
 }
+
+.align-items-c {
+  align-items: center;
+}
+
+.flex-direccion-c {
+  flex-direction: column;
+}
+
 /* Margin */
 .margin-1 {
   margin: 1rem;
@@ -64,6 +80,10 @@ figcaption {
 
 .margin-b {
   margin-bottom: 0.5rem;
+}
+
+.margin-b-1 {
+  margin-bottom: 1rem;
 }
 
 /* Padding */
@@ -77,6 +97,10 @@ figcaption {
 
 .justify-c {
   justify-content: space-between;
+}
+
+.justify-c-c {
+  justify-content: center;
 }
 
 .justify-c-e {
@@ -118,4 +142,31 @@ figcaption {
 #category h5 {
   font-size: 0.8rem;
   margin-bottom: 0.5rem;
+}
+
+.form {
+  text-align: center;
+  justify-content: center;
+  margin: 1rem 5rem 0 5rem;
+  gap: 1rem;
+}
+
+.form input {
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.form button {
+  height: 1.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#pass {
+  width: 90%;
+}
+
+#eye {
+  font-size: 1rem;
 }

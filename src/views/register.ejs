@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/header.ejs") %>
+    <main>
+      <section class="flex flex-direccion-c margin-1">
+        <h1>Register</h1>
+        <form action="" class="margin-b-1">
+          <div class="form flex flex-direccion-c">
+            <input type="text" placeholder="Ingresar usuario..." />
+            <div class="flex justify-c align-items-c">
+              <input
+                type="password"
+                placeholder="Ingresar contraseña..."
+                id="pass"
+              />
+              <i id="eye" class="fa-regular fa-eye"></i>
+            </div>
+            <div class="flex justify-c align-items-c">
+              <input
+                type="password"
+                placeholder="Confirmar contraseña..."
+                id="pass"
+              />
+              <i id="eye" class="fa-regular fa-eye"></i>
+            </div>
+            <input type="email" name="" id="" placeholder="Ingresar email..." />
+
+            <button type="submit">Registrarme</button>
+            <button>
+              <i class="fa-brands fa-google"></i>Registrarme con Google
+            </button>
+            <button>
+              <i class="fa-brands fa-apple"></i>Registrarme con Apple
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
