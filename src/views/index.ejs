@@ -5,7 +5,7 @@
     <%- include("./partials/header.ejs") %>
     <main>
       <!-- Juego del Año -->
-      <section class="margin-1 padding-1">
+      <section class="margin-1 padding-1 image">
         <!-- <h1 class="margin-b">Juego del Año</h1> -->
         <figure>
           <img
@@ -17,7 +17,7 @@
         </figure>
       </section>
       <!-- Juegos destacados -->
-      <section class="margin-1 padding-1">
+      <section class="scroll margin-1 padding-1">
         <h2 class="margin-b">Juegos Destacados</h2>
         <div class="scroll-container flex gap">
           <article>
@@ -42,7 +42,7 @@
         </div>
       </section>
       <!-- Categorias -->
-      <section id="category" class="margin-1 padding-1">
+      <section id="category" class="scroll margin-1 padding-1">
         <h2 class="margin-b">Categorias Destacadas</h2>
         <div class="scroll-container flex gap justify-c-e">
           <article class="card flex w-22 h-5 bor-1">
@@ -64,5 +64,6 @@
         </div>
       </section>
     </main>
+    <%- include("./partials/footer.ejs") %>
   </body>
 </html>
