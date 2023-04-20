@@ -61,6 +61,18 @@ figcaption {
   max-width: 100%;
 }
 
+.text-align-c {
+  text-align: center;
+}
+
+.text-align-r {
+  text-align: right;
+}
+
+.text-align-l {
+  text-align: left;
+}
+
 .flex {
   display: flex;
 }
@@ -177,6 +189,10 @@ figcaption {
 
 #eye {
   font-size: 1rem;
+}
+
+.images-product {
+  background-color: #0c6061;
 }
 
 /* Footer */
