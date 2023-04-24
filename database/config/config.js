@@ -1,9 +1,9 @@
 module.exports = {
   development: {
-    username: "root",
-    password: null,
-    database: "database_development",
-    host: "127.0.0.1",
+    username: "npcgames",
+    password: "AgusLautiFede",
+    database: "npcgames_db",
+    host: "mysql-npcgames.alwaysdata.net",
     dialect: "mysql",
   },
   test: {
