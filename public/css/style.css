@@ -1,3 +1,9 @@
+:root {
+  --darkblue: #0c6061;
+  --lightBlue: #0f7d7e;
+  --white: #fffdd1;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14,6 +20,8 @@ body {
 
 nav {
   font-family: "Rubik", sans-serif;
+  box-shadow: 0 0 6px #222;
+  height: 2rem;
 }
 
 a:link,
@@ -51,6 +59,10 @@ figcaption {
   padding-bottom: -10px;
   width: 100%;
   border-radius: 0px 0px 4px 4px;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 4px #222;
 }
 
 .color {
