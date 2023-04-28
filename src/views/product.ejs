@@ -7,7 +7,10 @@
     <%- include('./partials/header.ejs') %>
     <main>
       <section class="margin-1 image padding-1">
-        <h2>Product</h2>
+        <div class="flex justify-c">
+          <h2><%= product.name %></h2>
+          <h2>$<%= product.price %></h2>
+        </div>
         <!-- Titulo y Calificacion -->
         <div>
           <i class="fa-solid fa-star"></i>
@@ -20,49 +23,28 @@
         <div class="scroll margin-1 padding-1 images-product">
           <div class="flex gap">
             <article>
-              <img
-                src="/images/the-sims-4.jpg"
-                alt="game"
-                class="maxw bor-10"
-              />
+              <img src="<%= product.image %>" alt="game" class="maxw bor-10" />
             </article>
             <article>
-              <img
-                src="/images/the-sims-4.jpg"
-                alt="game"
-                class="maxw bor-10"
-              />
+              <img src="<%= product.image %>" alt="game" class="maxw bor-10" />
             </article>
             <article>
-              <img
-                src="/images/the-sims-4.jpg"
-                alt="game"
-                class="maxw bor-10"
-              />
+              <img src="<%= product.image %>" alt="game" class="maxw bor-10" />
             </article>
             <article>
-              <img
-                src="/images/the-sims-4.jpg"
-                alt="game"
-                class="maxw bor-10"
-              />
+              <img src="<%= product.image %>" alt="game" class="maxw bor-10" />
             </article>
           </div>
         </div>
         <!-- Imagen principal -->
         <div class="margin-1 padding-1 images-product image">
-          <img src="/images/the-sims-4.jpg" alt="game" class="maxw image" />
+          <img src="<%= product.image %>" alt="game" class="maxw image" />
         </div>
       </section>
       <!-- Descripcion -->
       <section class="margin-1 image padding-1">
         <h2>Descripcion</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint alias
-          aliquid ut nostrum, repellat id aperiam voluptatem iste consectetur
-          inventore a minus neque dicta, eligendi sunt maiores repellendus
-          doloremque itaque?
-        </p>
+        <p><%= product.description %></p>
       </section>
       <!-- Requisitos -->
       <section class="margin-1 image padding-1">

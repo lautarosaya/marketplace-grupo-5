@@ -1,5 +1,9 @@
+const db = require("../../database/models");
+
 module.exports = {
   show: (req, res) => {
-    res.render("product");
+    db.Product.findByPk(req.params.id).then((product) => {
+      res.render("product", { product });
+    });
   },
 };

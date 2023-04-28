@@ -130,7 +130,7 @@ figcaption {
 }
 
 .justify-c-e {
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .gap {
