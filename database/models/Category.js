@@ -1,8 +1,9 @@
 const { DataTypes } = require("sequelize");
+const { sequelize } = require(".");
 
 module.exports = (sequelize, DataTypes) => {
-  const Product = sequelize.define(
-    "Product",
+  const Category = sequelize.define(
+    "Category",
     {
       id: {
         type: DataTypes.INTEGER,
@@ -10,23 +11,19 @@ module.exports = (sequelize, DataTypes) => {
         autoIncrement: true,
       },
       name: DataTypes.STRING,
-      price: DataTypes.DECIMAL,
-      description: DataTypes.TEXT,
-      image: DataTypes.STRING,
-      awards: DataTypes.INTEGER,
+      icon: DataTypes.STRING,
     },
     {
-      tableName: "products",
+      tableName: "category",
       timestamps: false,
     }
   );
 
-  Product.associate = (models) => {
-    Product.belongsTo(models.Category, {
-      as: "category",
+  Category.associate = (models) => {
+    Category.hasMany(models.Product, {
+      as: "product",
       foreingKey: "categoryId",
     });
   };
-
-  return Product;
+  return Category;
 };

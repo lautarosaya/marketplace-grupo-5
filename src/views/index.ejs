@@ -22,7 +22,7 @@
       <section class="scroll margin-1 padding-1 box-shadow">
         <h2 class="margin-b">Juegos Destacados</h2>
         <div class="flex gap">
-          <% product.forEach(game => { %>
+          <% product.forEach((game, i) => { %> <% if (i < 5) { %>
           <article>
             <a href="/product/showProduct/<%= game.id %>">
               <img
@@ -32,29 +32,21 @@
               />
             </a>
           </article>
-          <% }) %>
+          <% } %> <% }) %>
         </div>
       </section>
       <!-- Categorias -->
       <section id="category" class="scroll margin-1 padding-1 box-shadow">
         <h2 class="margin-b">Categorias Destacadas</h2>
         <div class="scroll-container flex gap justify-c-e">
+          <% product.forEach((game, i ) => { i++ %> <% if (i < 5 ) { %>
           <article class="card flex w-22 h-5 bor-1 box-shadow">
-            <i class="fa-brands fa-space-awesome"></i>
-            <h5>Adventure</h5>
+            <a href="/product/showCategory/<%= game.category.id %>">
+              <i class="<%= game.category.icon %>"></i>
+              <h5><%= game.category.name %></h5>
+            </a>
           </article>
-          <article class="card flex w-22 h-5 bor-1 box-shadow">
-            <i class="fa-solid fa-gun"></i>
-            <h5>Shooter</h5>
-          </article>
-          <article class="card flex w-22 h-5 bor-1 box-shadow">
-            <i class="fa-solid fa-car-burst"></i>
-            <h5>Cars</h5>
-          </article>
-          <article class="card flex w-22 h-5 bor-1 box-shadow">
-            <i class="fa-solid fa-ghost"></i>
-            <h5>Indie</h5>
-          </article>
+          <% } %> <% }) %>
         </div>
       </section>
     </main>
