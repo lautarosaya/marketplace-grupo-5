@@ -8,8 +8,9 @@ module.exports = {
   },
 
   showCategory: (req, res) => {
-    db.Category.findByPk(req.params.id).then((category) => {
-      console.log(category);
+    db.Category.findByPk(req.params.id, {
+      include: [{ association: "product" }],
+    }).then((category) => {
       res.render("category", { category });
     });
   },
